@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Sky blue background */
+    color: #333;
+}
+
+header .top-banner {
+    background-color: #FFD700; /* Yellow background */
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+header .top-banner a {
+    color: #000;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+header .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the logo circular */
+    object-fit: cover;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .user-options {
+    display: flex;
+    align-items: center;
+}
+
+header .user-options a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+header .user-options button {
+    padding: 6px 10px;
+    border: none;
+    background-color: white;
+    color: #4CAF50;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #FFD700; /* Yellow background */
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.main-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD700; /* Yellow background */
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust height as needed */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 40%;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.banner-content .shop-now-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.banner-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-slider img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #4CAF50; /* Green background */
+}
+
+.category {
+    background-color: #FFD700; /* Yellow background */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    width: 23%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
