@@ -20,6 +20,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#categories">Categories</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
@@ -32,8 +33,8 @@
             </div>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Search products, brands and categories">
-            <button>Search</button>
+            <input type="text" id="searchInput" placeholder="Search products, brands and categories">
+            <button onclick="performSearch()">Search</button>
         </div>
     </header>
 
@@ -45,10 +46,10 @@
                 <a href="#" class="shop-now-btn">Shop Now</a>
             </div>
             <div class="banner-slider">
-                <img src="Images/OIP.jpeg" alt="Rice">
-                <img src="Images/OIP (1).jpeg" alt="Soybeans">
-                <img src="Images/OIP (2).jpeg" alt="Vegetables">
-                <img src="./Images/download.jpeg" alt="People">
+                <img class="slide" src="Images/OIP.jpeg" alt="Rice">
+                <img class="slide" src="Images/OIP (1).jpeg" alt="Soybeans">
+                <img class="slide" src="Images/OIP (2).jpeg" alt="Vegetables">
+                <img class="slide" src="./Images/download.jpeg" alt="People">
             </div>
         </section>
 
@@ -70,11 +71,63 @@
                 <h3>Fruits</h3>
             </div>
         </section>
+
+        <section id="reviews" class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>"Great quality produce and excellent service!" - Jane Doe</p>
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="review">
+                <p>"Fresh and affordable products. Highly recommend!" - John Smith</p>
+                <div class="star-rating">★★★★☆</div>
+            </div>
+        </section>
+
+        <section class="deals-of-the-day">
+            <h2>Deals of the Day</h2>
+            <div class="deal">
+                <img src="Images/deal1.png" alt="Deal 1">
+                <h3>Discounted Rice</h3>
+                <p>Get 20% off on all rice products.</p>
+            </div>
+            <div class="deal">
+                <img src="Images/deal2.png" alt="Deal 2">
+                <h3>Soybeans Offer</h3>
+                <p>Buy 2 kg, get 1 kg free!</p>
+            </div>
+        </section>
+
+        <section class="personalized-recommendations">
+            <h2>Popular Products</h2>
+            <div class="product-slideshow">
+                <div class="product-slide">
+                    <img src="Images/popular1.png" alt="Popular Product 1">
+                    <h3>Popular Rice</h3>
+                    <p>Expiry Date: 2024-12-31</p>
+                </div>
+                <div class="product-slide">
+                    <img src="Images/popular2.png" alt="Popular Product 2">
+                    <h3>Popular Soybeans</h3>
+                    <p>Expiry Date: 2025-01-15</p>
+                </div>
+                <div class="product-slide">
+                    <img src="Images/popular3.png" alt="Popular Product 3">
+                    <h3>Popular Vegetables</h3>
+                    <p>Expiry Date: 2024-11-20</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>Contact us: +256780196215 | clairemasiga22@gmail.com</p>
         <p>&copy; 2024 Happy Hoe Grocery Ltd.</p>
+        <div class="social-media">
+            <a href="#"><img src="./Images/download (1).jpeg" alt="Facebook"></a>
+            <a href="#"><img src="./Images/OIP (5).jpeg" alt="Twitter"></a>
+            <a href="#"><img src="./Images/OIP (3).jpeg" alt="Instagram"></a>
+        </div>
     </footer>
 
     <script src="./Scripts/grocery.js"></script>

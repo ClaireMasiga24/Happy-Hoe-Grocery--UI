@@ -1,19 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll(".banner-slider img");
-    let currentSlide = 0;
+function performSearch() {
+    const query = document.getElementById('searchInput').value;
+    // Perform search functionality (e.g., filter products, fetch search results from backend)
+    console.log('Searching for:', query);
+}
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.transform = `translateX(${(i - index) * 100}%)`;
-        });
+// Slideshow script
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds
-
-    showSlide(currentSlide);
-});
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+}
